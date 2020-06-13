@@ -3,13 +3,41 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .btn {
-  padding: 2rem 5rem;
-  border: none;
-  border-radius: 1rem;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
-  background-color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: var(--red);
+  padding: 1.5rem 5rem;
+  border: none;
+  border-radius: .5rem;
   transition: opacity 0.3s;
   cursor: pointer;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &:active{
+    opacity: 1;
+  }
+
+  &-container{
+    margin-top: 5rem;
+    .btn{
+      margin-right: 2rem;
+    }
+
+    span{
+      color: var(--grayish-blue);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+    }
+  }
 }
