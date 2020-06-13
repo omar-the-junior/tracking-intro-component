@@ -2,23 +2,30 @@
 /////////////////Main container//////////////////////
 ///////////////////////////////////////////////////////////////////////////////////
 
-.container{
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    overflow-x: hidden;
-    margin-top: 15rem;
-    .main-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-// Background image (Illustration devices) 
-    .right-side{
-        img{
-           width: 135%;
-        }
-    }
+.container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  overflow-x: hidden;
+  margin-top: 15rem;
 
+  @media screen and (max-width: 680px) {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  // Background image (Illustration devices)
+  .right-side {
+    @media screen and (max-width: 680px) {
+      grid-row: 1;
+    }
+    img {
+      width: 135%;
+    }
+  }
 }
-

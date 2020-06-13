@@ -2,32 +2,38 @@
 /////////////////////////////Main text////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.main-content{
-    
-    .new{
-        font-weight: 700;
-        color: #fff;
-        background-color: var(--dark-blue);
-        border-radius: 5rem;
-        padding: 0.5rem 1rem;
-        margin-right: 1rem;
-    }
-    &__dashboard-txt{
-        color: var(--grayish-blue);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
+.main-content {
+  @media screen and (max-width: 680px) {
+    grid-row: 2;
+  }
+  &__items {
+    padding: 1rem;
+  }
 
-    &__head{
-        font-size: 7rem;
-        color: var(--dark-blue);
-        text-transform: uppercase;
-        margin: 2rem 0;
-        max-width: 52rem;
-    }
+  .new {
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--dark-blue);
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+  }
+  &__dashboard-txt {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 
-    p{
-        width: 27rem;
-        color: var(--dark-grayish-blue);
-    }
+  &__head {
+    font-size: 6rem;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    margin: 2rem 0;
+    max-width: 45rem;
+  }
+
+  p {
+    width: 27rem;
+    color: var(--dark-grayish-blue);
+  }
 }

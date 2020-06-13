@@ -11,4 +11,8 @@
   height: 50vh;
   background-color: var(--light-grayish-blue);
   border-bottom-left-radius: 5rem;
+
+  @media screen and (max-width: 680px) {
+    height: 60vh;
+  }
 }
