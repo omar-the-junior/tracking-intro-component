@@ -197,4 +197,5 @@ nav {
 .menu-button {
   position: absolute;
   top: 5rem;
-  right: 5rem; }
+  right: 5rem;
+  display: none; }
