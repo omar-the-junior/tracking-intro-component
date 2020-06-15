@@ -9,31 +9,31 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: var(--red);
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 3rem;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   transition: opacity 0.3s;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     opacity: 0.7;
   }
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 
-  &:active{
+  &:active {
     opacity: 1;
   }
 
-  &-container{
+  &-container {
     margin-top: 5rem;
-    .btn{
+    .btn {
       margin-right: 2rem;
     }
 
-    span{
+    span {
       color: var(--grayish-blue);
       text-transform: uppercase;
       letter-spacing: 2px;

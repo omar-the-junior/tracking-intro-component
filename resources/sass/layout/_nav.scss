@@ -1,17 +1,17 @@
 ////////////////////////////////////////////////////////
 ////////////////////Navigation bar/////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
+
+.logo {
+  position: absolute;
+  left: 7%;
+  top: 5rem;
+}
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin: 5rem 15rem;
-  
-  @media screen and (max-width: 680px) {
-    *:not(.logo) {
-      display: none;
-    }
-  }
 
   @media screen and (max-width: 1350px) {
     margin: 5rem 10rem;
@@ -20,12 +20,26 @@ nav {
     margin: 5rem 5rem;
   }
 
+  @media screen and (max-width: 680px) {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 80%;
+    padding: 2rem 0;
+    box-shadow: -2px 4px 20px 1px #000000;
+    margin: 0;
+  }
+
   .nav-links {
     &__container {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: auto;
+
       li {
         list-style: none;
         margin-right: 5rem;
@@ -41,6 +55,14 @@ nav {
           }
         }
       }
+
+      @media screen and (max-width: 680px) {
+        flex-direction: column;
+
+        li {
+          margin: 0 0 3rem 0;
+        }
+      }
     }
   }
 
@@ -50,6 +72,13 @@ nav {
     height: 0.5rem;
     border-radius: 50%;
     margin-right: 5rem;
+
+    @media screen and (max-width: 680px) {
+      margin: 0 0 3rem 0;
+      width: 80%;
+      height: 0.1rem;
+      border-radius: 0;
+    }
   }
 
   .login-btn {
@@ -72,4 +101,14 @@ nav {
   top: 5rem;
   right: 5rem;
   display: none;
+  z-index: 1000;
+  cursor: pointer;
+
+  @media only screen and (max-width: 680px) {
+    display: block;
+  }
+}
+
+.open-nav {
+  display: flex;
 }

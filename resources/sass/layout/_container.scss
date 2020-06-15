@@ -6,10 +6,9 @@
   display: grid;
   grid-template-columns: 50vw 50vw;
   overflow-x: hidden;
-  margin-top: 15rem;
+  padding-top: 20rem;
 
   @media screen and (max-width: 680px) {
-    margin-top: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
